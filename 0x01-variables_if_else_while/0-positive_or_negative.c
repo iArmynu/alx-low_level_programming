@@ -1,12 +1,12 @@
-#include <stdlib.h>                                                                                                                             
-#include <time.h>                                                                                                                               
-#include <stdio.h>                                                                                                                              
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.>
 
 /**
  * main - print a random number
  *
  * Return: 0
- */                                                                                       
+ */
 int main(void)
 {
 	srand(time(0));
