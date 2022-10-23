@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints time table in this format: HH:MM
- * Return: the sum of two numbers.
+ * print_square - prints a square of size size
+ * @size: size of the square
+ *
+ * Return: void
  */
-void jack_bauer(void)
+void print_square(int size)
 {
-int h, m;
+	int i, j;
 
-for (h = 0; h < 24; h++)
-{
-for (m = 0; m < 60; m++)
-{
-_putchar((h / 10) + '0');
-_putchar((h % 10) + '0');
-_putchar(':');
-_putchar((m / 10) + '0');
-_putchar((m % 10) + '0');
-_putchar('\n');
-}
-}
+	if (size <= 0)
+		_putchar('\n');
+
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < (size); j++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
+	}
 }
